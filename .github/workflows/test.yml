@@ -1,7 +1,7 @@
 name: Testing
-on: [workflow_call, workflow_dispatch]
+on: pull_request
 jobs:
   first-test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Uudelleenkäytettävä testauskoodi"
+      - run: exit 1
