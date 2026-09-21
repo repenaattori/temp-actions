@@ -15,10 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          ehcho "Second job"
-          ehcho "Second job"
-          ehcho "Second job"
-          ehcho "Second job"
-          ehcho "Second job"
-          ehcho "Second job"
+          echo  "Second job"
+          echo  "Second job"
+          echo  "Second job"
+          echo  "Second job"
+          echo  "Second job"
+          echo  "Second job"
           
