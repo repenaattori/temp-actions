@@ -15,7 +15,7 @@ jobs:
     needs: first_job
     runs-on: ubuntu-latest
     steps:
-      - run: echo  "Second job"
+      - run: ecasdfho  "Second job"
       - name: test
         if: ${{failure()}}
         run: |
