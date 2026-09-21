@@ -8,7 +8,7 @@ jobs:
       - run: echo "eka"
       - run: echo "eka"
       - run: echo "eka"
-      - run: echo "eka"
+      - run: exit 1
       - run: echo "eka"
       - run: echo "eka"
       - run: echo "eka"
