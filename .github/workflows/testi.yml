@@ -1,0 +1,25 @@
+name: Harjoitus 1
+on: workflow_dispatch:
+
+jobs:
+  eka:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "eka"
+      - run: echo "eka"
+      - run: echo "eka"
+      - run: echo "eka"
+      - run: echo "eka"
+      - run: echo "eka"
+      - run: echo "eka"
+  toka:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "toka"
+      - run: echo "toka"
+      - run: echo "toka"
+      - run: echo "toka"
+      - run: echo "toka"
+      - run: echo "toka"
+      - run: echo "toka"
+      - run: echo "toka"
