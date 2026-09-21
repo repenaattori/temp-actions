@@ -13,6 +13,7 @@ jobs:
           exit 1
           echo "First job"
   second_job:
+    if: always()
     needs: first_job
     runs-on: ubuntu-latest
     steps:
