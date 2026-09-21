@@ -13,15 +13,11 @@ jobs:
           exit 1
           echo "First job"
   second_job:
-    if: always()
     needs: first_job
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo  "Second job"
-          echo  "Second job"
-          echo  "Second job"
-          echo  "Second job"
-          echo  "Second job"
-          echo  "Second job"
-          
+      - run: echo  "Second job"
+      - name: test
+        if: ${{failure()}}
+        run: |
+          echo "uusi"
