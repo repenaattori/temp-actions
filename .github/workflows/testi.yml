@@ -1,1 +1,24 @@
+name: Job order
+on: workflow_dispatch
 
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "First job"
+          echo "First job"
+          echo "First job"
+          echo "First job"
+          echo "First job"
+  second_job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          ehcho "Second job"
+          ehcho "Second job"
+          ehcho "Second job"
+          ehcho "Second job"
+          ehcho "Second job"
+          ehcho "Second job"
+          
