@@ -10,7 +10,6 @@ jobs:
           echo "First job"
           echo "First job"
           echo "First job"
-          exit 1
           echo "First job"
   second_job:
     needs: first_job
