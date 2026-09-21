@@ -17,6 +17,5 @@ jobs:
     steps:
       - run: ecasdfho  "Second job"
       - name: test
-        if: ${{failure()}}
         run: |
           echo "uusi"
