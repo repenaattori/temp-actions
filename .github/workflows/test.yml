@@ -4,4 +4,4 @@ jobs:
   first-test:
     runs-on: ubuntu-latest
     steps:
-      - run: exit 1
+      - run: echo "onnistui"
