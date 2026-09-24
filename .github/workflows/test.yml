@@ -6,7 +6,7 @@ jobs:
     outputs:
         myval: ${{steps.muikula.outputs.test}}
     steps:
-      - name: muikula
+      - id: muikula
         run: echo "test=kokeilu" >> $GITHUB_OUTPUT
   second:
     runs-on: ubuntu-latest
