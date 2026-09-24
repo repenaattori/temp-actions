@@ -8,3 +8,11 @@ jobs:
     steps:
       - name: muikula
         run: echo "test=kokeilu" >> $GITHUB_OUTPUT
+  second:
+    runs-on: ubuntu-latest
+    needs: first
+    env:
+      MUUTTUJA: ${{needs.first.outputs.myval}}
+    steps:
+      - run: echo "$MUUTTUJA ...."
+    
