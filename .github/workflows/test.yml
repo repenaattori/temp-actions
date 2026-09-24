@@ -1,7 +1,10 @@
 name: Testing
-on: pull_request
+on: workflow_dispatch
 jobs:
-  first-test:
+  first:
     runs-on: ubuntu-latest
+    outputs:
+        myval: ${{steps.muikula.outputs.test}}
     steps:
-      - run: exit 1
+      - name: muikula
+        run: echo "test=kokeilu" >> $GITHUB_OUTPUT
