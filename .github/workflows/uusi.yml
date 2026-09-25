@@ -1,6 +1,5 @@
 name: Uusi
 on: push
-
 jobs:
   testi:
     if: ${{github.event.head_commit.message == 'yes'}}
