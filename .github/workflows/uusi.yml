@@ -3,7 +3,9 @@ on: push
 jobs:
   testi:
     if: ${{github.event.head_commit.message == 'yes'}}
+    env:
+      TEMP: ${{github.event.head_commit.added[0]}}
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{github.event.head_commit.added[0]}}
+      - run: echo "Filu on $TEMP"
       
