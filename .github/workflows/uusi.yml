@@ -8,5 +8,8 @@ jobs:
       TEMP: ${{toJson(github.event)}}
     runs-on: ubuntu-latest
     steps:
-      - run: echo "$TEMP"
+      - run: |
+          echo "----------------------------------"
+          echo "$TEMP"
+          echo "----------------------------------"
       
