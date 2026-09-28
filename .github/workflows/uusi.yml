@@ -1,7 +1,7 @@
 name: Uusi
 on: 
   release:
-    types: created
+    types: published
 jobs:
   testi:
     env:
