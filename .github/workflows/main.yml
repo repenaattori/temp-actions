@@ -1,10 +1,9 @@
 name: Main workflow
-on: workflow_dispatch
+on: issues
 jobs:
   main_first:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Tehdään jotan mainissa"
-  main_second:
-    needs: main_first
-    uses: './.github/workflows/test.yml'
+      - run: echo ${{github.action}}
+      - run: echo ${{github.event.action}}
+      - run: echo $GITHUB_ACTION
