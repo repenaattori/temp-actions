@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "Eka ${{github.action}}"
+          echo "Eka ${{github.event_name}}"
           echo "Toka ${{github.event.action}}"
           echo "Kolmas $GITHUB_EVENT_NAME"
