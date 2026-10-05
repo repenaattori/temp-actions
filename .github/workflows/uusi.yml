@@ -1,15 +1,12 @@
 name: Uusi
-on: 
-  release:
-    types: published
+on: workflow_dispatch
 jobs:
   testi:
     env:
       TEMP: ${{toJson(github.event)}}
     runs-on: ubuntu-latest
+    container: python:3.11.17-alpine3.24
     steps:
       - run: |
-          echo "----------------------------------"
-          echo "$TEMP"
-          echo "----------------------------------"
+          python --version
       
