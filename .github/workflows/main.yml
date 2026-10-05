@@ -9,5 +9,5 @@ jobs:
           echo "Toka ${{github.event.action}}"
           echo "Kolmas $GITHUB_EVENT_NAME"
       - name: Testi
-        if: ${{github.event_name == 'issues'}}
+        if: ${{github.event_name == 'issue'}}
         run: echo "Onnistui"
