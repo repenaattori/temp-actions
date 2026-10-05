@@ -7,4 +7,4 @@ jobs:
       - run: |
           echo "Eka ${{github.action}}"
           echo "Toka ${{github.event.action}}"
-          echo "Kolmas $GITHUB_ACTION"
+          echo "Kolmas $GITHUB_EVENT_NAME"
