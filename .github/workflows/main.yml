@@ -8,3 +8,6 @@ jobs:
           echo "Eka ${{github.event_name}}"
           echo "Toka ${{github.event.action}}"
           echo "Kolmas $GITHUB_EVENT_NAME"
+      - name: Testi
+        if: ${{github.event_name == 'issues'}}
+        run: echo "Onnistui"
