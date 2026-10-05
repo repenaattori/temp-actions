@@ -4,6 +4,7 @@ jobs:
   main_first:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{github.action}}
-      - run: echo ${{github.event.action}}
-      - run: echo $GITHUB_ACTION
+      - run: |
+          echo "Eka ${{github.action}}"
+          echo "Toka ${{github.event.action}}"
+          echo "Kolmas $GITHUB_ACTION"
